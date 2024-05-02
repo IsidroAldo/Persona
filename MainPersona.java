@@ -1,6 +1,6 @@
-    import java.util.Scanner;
+import java.util.Scanner;
 
-    class MainPersona {
+class MainPersona {
     public static void main(String[] args) {
 
         Scanner op = new Scanner(System.in);
@@ -12,17 +12,14 @@
 
         System.out.println("tu nombre es ");
         a = op.next();
-        x.nombre = a;
+        x.setNombre(a);
         System.out.println("cual es tu edad");
         b = op.nextInt();
-        x.edad = b;
+        x.setEdad(b);
         System.out.println("cual es tu altura");
         altura = op.nextDouble();
-        x.altura = altura;
-
-        x.mostrarNombre();
-        x.mostrarEdad();
-        x.mostrarAltura();
+        x.setAltura(altura);
+        System.out.println(x);
 
     }
 }
